@@ -1,0 +1,15 @@
+include ../header/header.pug
+include ../games/games.pug
+
+mixin hero(data)
+    .hero.lazy-background(data-bg="%=static=%images/general/hero-bg.jpg" style="background-image: url('%=static=%images/general/hero-bg.jpg');")
+
+        +header()
+
+        .hero__container.container
+            h1.hero__title.title.title_h1 Competitive gaming platform
+            h2.hero__text Play Virtual Games & Earn Real Money
+            a.hero__button.button.button_big(href="#") зарегистрироваться
+
+        +games().hero__games
+

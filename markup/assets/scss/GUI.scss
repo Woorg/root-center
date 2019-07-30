@@ -1,0 +1,128 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+
+/* h1 */
+
+.page {
+    &__title {
+        margin-top: 0;
+        max-width: 425px;
+        background: white;
+        font-size: 60px;
+    }
+
+}           
+
+a {
+    color: #FFF;
+    text-decoration: none;
+    &:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+
+
+.lazy-bg {
+    display: none;
+    
+    &.visible {
+
+        display: block;
+    
+    }
+
+}
+
+.button {
+    display: inline-block;
+    vertical-align: baseline;
+    height: 60px;
+    background: #ff55d9;
+    font-size: 18px;
+    @include css-lock(14, 18, 320, 1400, font-size);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 40px;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 0 0 20px #ff55d9;
+    border-radius: 30px 30px / 30px 30px;
+    @include tr(all .3s ease);
+    @include rmin($sm) {
+    }
+
+    &:hover {
+        background: #b4459b;
+        color: #b5b5b5;
+        border-radius: 40px;
+        box-shadow: 0 0 20px #ff55d9;
+        @include tr(all .3s ease)
+    }
+
+    &_big {
+        height: 80px;
+        border-radius: 40px 40px / 40px 40px;
+    }
+    &_big-second {
+        height: 80px;
+        background: #ffffff;
+        color: #282633;
+        border-radius: 40px;
+        box-shadow: 0 0 20px #18171f;
+        &:hover {
+            background-color: #929292;
+
+            color: #282633;
+            box-shadow: 0 0 20px #18171f;
+        }
+        
+    }
+
+}
+
+
+.title {
+    color: #ffffff;
+    font-family: $o;
+    &_h1 {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.3;
+        
+        @include css-lock(30, 60, 320, 1400, font-size);
+        
+    }
+    &_h2 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 1.3;
+        
+        @include css-lock(20, 40, 320, 1400, font-size);
+    }
+    &_h3 {
+        font-size: 30px;
+        font-weight: 700;
+        @include css-lock(20, 30, 320, 1400, font-size);
+    }
+    &_h4 {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        
+        @include css-lock(16, 20, 320, 1400, font-size);
+    }
+    &_h5 {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.4;   
+    }
+    &_h6 {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+

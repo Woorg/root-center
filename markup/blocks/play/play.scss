@@ -1,0 +1,144 @@
+.play {
+    
+    &__container {
+        padding-top: (236px / 2);
+        padding-bottom: (111px / 2);
+        text-align: center;
+        
+        @include rmin($sm) {
+            padding-top: 236px;
+            padding-bottom: 111px;
+        }
+    }
+
+    &__title {
+        margin-bottom: (165px / 2);
+        
+        @include rmin($sm) {
+            margin-bottom: 165px;
+           
+        }
+    }
+
+    &__list {
+        @include resetlist();
+        
+    }
+
+    &__item {
+        position: relative;
+        margin-bottom: 30px;
+        flex-basis: 100%;
+        
+        @include rmin($sm) {
+            flex-basis: auto;
+        }
+
+        &_money {
+
+
+            .play__w {
+                
+                margin-left: 0;
+                
+                @include rmin($sm) {
+                    margin-left: 100px;
+                    
+                }
+
+            }
+
+
+            .play__icon {
+                width: 86px;
+                height: 62px;
+                @include bg($money-icon);
+                
+                &:after {
+                    top: -47px;
+                    left: -56px;
+                    width: 233px;
+                    height: 182px;
+                    // background-image: url('../images/general/play-item-bg-1.png');
+                }
+
+            }   
+
+        }
+
+        &_points {
+
+            .play__icon {
+                width: 57px;
+                height: 68px;
+                @include bg($points-icon);
+                
+                &:after {
+                    top: -98px;
+                    left: -82px;
+                    width: 224px;
+                    height: 293px;
+                    // background-image: url('../images/general/play-item-bg-2.png');
+                }
+
+            }   
+            
+        }
+
+        &_xp {
+
+            .play__w {
+                
+                margin-right: 0;
+
+                @include rmin($sm) {
+                    margin-right: 160px;
+                    
+                }
+
+            }
+
+            .play__icon {
+                width: 72px;
+                height: 67px;
+                @include bg($xp-icon);
+                
+                &:after {
+                    top: -45px;
+                    left: -71px;
+                    width: 246px;
+                    height: 202px;
+                    // background-image: url('../images/general/play-item-bg-3.png');
+                }
+
+            }   
+            
+        }
+
+    }
+
+    &__icon {
+        position: relative;
+        margin: auto;
+        margin-bottom: 18px;
+        
+        &:after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            content: '';
+
+        }
+
+    }
+
+    &__item-title {
+        font-size: 30px;
+        font-weight: 700;
+        @include css-lock(18, 30, 320, 1400, font-size);
+    }
+
+
+
+}

@@ -1,0 +1,125 @@
+.video {
+    position: relative;
+    // padding-top: 52.6315789473684%;
+    padding-top: 34.631579%;
+    max-width: 320px;
+    width: 320px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+
+    @include rmin($sm) {
+        padding-top: 38%;
+        // padding-top: 57.631579%;
+        max-width: 570px;
+        width: 570px;
+    }
+
+
+     @include rmin($md) {
+        padding-top: 38%;
+    }
+
+    
+    @include rmin($lg) {
+        padding-top: 52.6315789473684%;
+        max-width: 1140px;
+        width: 1140px;
+
+    }
+
+
+
+    &__mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 316px;
+        height: 166px;
+        mask-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE0MCIgaGVpZ2h0PSI2MDAiIHZpZXdCb3g9IjAgMCAxMTQwIDYwMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOTczLjczNCA2MDBIMjQuMDIxNUM4LjQ4MTU3IDYwMCAtMi45NTEyMSA1ODUuNTA0IDAuNjc1NTc4IDU3MC40MDhMMTMwLjk3NiAyNy42NDhDMTM0Ljg2NyAxMS40NzIgMTQ5LjM1IDAuMDQ4IDE2Ni4wMTggMC4wNDhMMTExNS45NyAwQzExMzEuNTEgMCAxMTQyLjk3IDE0LjUyIDExMzkuMzIgMjkuNjE2TDEwMDguNzMgNTcyLjQyNEMxMDA0Ljg2IDU4OC42IDk5MC4zNzkgNjAwIDk3My43MzQgNjAwWiIgZmlsbD0iIzIzMjIyMiIvPjwvc3ZnPg==);
+        mask-repeat: no-repeat;
+        mask-size: 316px 166px;
+        
+        @include rmin($sm) {
+            width: 570px;
+            height: 300px;
+            mask-size: 570px 300px;
+
+        }
+
+        @include rmin($lg) {
+            width: 1140px;
+            height: 600px;
+            mask-size: 1140px 600px;
+
+        }
+
+
+
+        
+        
+    }
+    // background: #100f13;
+    
+    // &:before,
+    // &:after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     width: 10px;
+    //     height: 100%;
+    //     background-color: #fff;
+    // }
+    
+    // &:before {
+    //     left: -9px;
+    // }
+    
+    // &:after {
+    //     right: -5px;
+    // }
+    
+    // embed {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     mask: url(#mask) no-repeat 50% 50%;
+    //     // clip-path: url(#mask);
+    //     mask-mode: alpha;
+    //     fill: #fff;
+    // }
+    // svg { 
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     path {
+    //         fill: #fff;
+    //     }
+           
+    //     > rect {
+    //         position: absolute;
+    //         top: 0;
+    //         left: 0;
+    //         width: 80%;
+    //         height: 100%;
+    //         // // background-color: red;
+    //         // mask: url(#mask) no-repeat 50% 50%;
+    //         // // clip-path: url(#mask);
+    //         // mask-mode: alpha;
+    //         // fill: #fff;
+    //     }
+        
+    //     rect {
+    //         fill: #fff;
+    //         fill: #100f13;
+    //     }
+    // }
+}
+
+

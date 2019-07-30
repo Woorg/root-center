@@ -1,0 +1,124 @@
+.social
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    &__link
+    {
+        margin-bottom: 20px;
+        margin-right: 14px;
+        position: relative;
+
+        width: 44px;
+        height: 44px;
+        
+        display: block;
+        
+        // opacity: .1;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.1);
+        @include tr(all .3s ease);
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+        &_vk
+        {
+            .social__icon
+            {
+                width: 20px;
+                height: 12px;
+
+            }
+
+            &:hover {
+                background-color: #5c7aad;
+                @include tr(all .3s ease);
+            }
+        }
+
+        &_twitter
+        {
+            .social__icon
+            {
+                width: 18px;
+                height: 14px;
+               
+            }
+
+            &:hover {
+                background-color: #5c95ad;
+                @include tr(all .3s ease);
+            }
+        }
+
+        &_facebook
+        {
+            .social__icon
+            {
+                width: 10px;
+                height: 20px;
+            }
+
+            &:hover {
+                background-color: #524786;
+                @include tr(all .3s ease);
+            }
+        }
+
+        &_instagram
+        {
+            .social__icon
+            {
+                width: 19px;
+                height: 19px;
+            }
+            &:hover {
+                background-color: #5c7aad;
+                background-image: linear-gradient(to top, #f8d16b 0%, #ef5232 30%, #c0186c 60%, #4a34d6 100%);
+                @include tr(all .3s ease);
+            }
+        }
+
+        &_twitch
+        {
+            .social__icon
+            {
+                width: 18px;
+                height: 19px;
+            }
+            &:hover {
+                background-color: #6639cb;
+                @include tr(all .3s ease);
+            }
+        }
+
+        &_discord
+        {
+            .social__icon
+            {
+                width: 24px;
+                height: 17px;
+            }
+            &:hover {
+                background-color: #933e8c;
+                @include tr(all .3s ease);
+            }
+        }
+    }
+
+
+
+
+    &__icon
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+
+        fill: #fff;
+    }
+}

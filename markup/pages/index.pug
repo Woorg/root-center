@@ -1,0 +1,42 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../blocks/head/head.pug
+    
+    include ../blocks/header/header.pug
+    include ../blocks/hero/hero.pug
+
+    include ../blocks/play/play.pug
+    include ../blocks/tournaments/tournaments.pug
+    include ../blocks/achieve/achieve.pug
+    include ../blocks/features/features.pug
+    include ../blocks/battle-pass/battle-pass.pug
+    include ../blocks/join/join.pug
+    include ../blocks/cta/cta.pug
+
+    include ../blocks/footer/footer.pug
+
+
+    head
+        +head(head.defaults)
+    body.page
+        .page__wrapper
+
+            |%=symbols=%
+        
+            +hero()
+        
+            main.page__inner
+                +play()
+                +tournaments()
+                +achieve()
+                +features()
+                +battle-pass()
+                +join()
+                +cta()
+
+            .page__footer
+                +footer()
+
+
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

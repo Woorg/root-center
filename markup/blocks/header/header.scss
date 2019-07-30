@@ -1,0 +1,62 @@
+.header
+{
+    &__container
+    {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__logo
+    {
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 30px;
+        margin-left: auto;
+        
+        @include rmin($sm) {
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-top: 9px;
+
+        }
+
+
+        @include rmin($md) {
+            margin-left: 85px;
+            margin-right: 0;
+            margin-bottom: 0;
+            margin-top: 9px;
+
+        }
+
+            
+            
+
+    }
+    &__auth
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include rmin($sm) {
+            justify-content: flex-end;
+
+        }
+
+    }
+
+    &__button
+    {
+        margin-right: 0;    
+        padding-top: 19px;
+        padding-right: 55px;
+        padding-bottom: 16px;
+        padding-left: 55px;
+        @include rmin($sm) {
+            margin-right: 33px;
+            padding-right: 55px;
+        }
+
+    }
+}

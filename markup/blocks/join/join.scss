@@ -1,0 +1,154 @@
+.join {
+    position: relative;
+    background: #121116;
+    &:after
+     {
+        
+        position: absolute;
+        top: -141px;
+        left: 0;
+        width: 1920px;
+        height: 1668px;
+        content: "";
+        background: url('../images/general/join-bg.png') 0 0 no-repeat;
+
+    }
+
+   
+
+
+    &__container {
+        position: relative;
+        z-index: 1;
+        padding-top: (117px / 2);
+        padding-bottom: (309px / 2);
+        text-align: center;
+        
+        @include rmin($sm) {
+            padding-top: 117px;
+            padding-bottom: 309px;
+        }
+
+    }
+
+    &__title {
+        margin-bottom: (97px / 2);
+        @include rmin($sm) {
+            margin-bottom: 97px;
+        }
+    }
+
+
+    &__w {
+        position: relative;
+        padding-left: 0;
+        margin: auto;        
+        max-width: 300px;
+        width: 100%;
+        @include rmin($sm) {
+            max-width: 520px;
+        }
+
+        @include rmin($md) {
+            max-width: 520px;
+        }
+
+        @include rmin($lg) {
+            padding-left: 24px;
+            max-width: 996px;
+        }
+
+    }
+
+
+    &__monitor {
+        margin-bottom: 30px;
+        // padding-top: 0;
+        // padding-left: 0;
+        // padding-bottom: 0;
+        
+        padding-top: 11px;
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-bottom: 55px;
+        // padding-bottom: 60px;
+        background: url('../images/general/monitor.png') 0 0 / cover no-repeat;
+        
+        @include rmin($sm) {
+            margin-bottom: 30px;
+            
+            padding-top: 19px;
+            padding-left: 22px;
+            padding-right: 22px;
+            padding-bottom: 92px;
+
+            
+        }
+
+        @include rmin($md) {
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 146px;
+            
+            padding-top: 18px;
+            padding-left: 19px;
+            padding-right: 19px;
+            padding-bottom: 78px;
+        }
+
+
+        @include rmin($lg) {
+            padding-top: 32px;
+            padding-left: 32px;
+            padding-right: 32px;
+            padding-bottom: 146px;
+        }
+
+
+    }
+
+
+    &__monitor-image {
+        // width: 912px;
+        // height: 515px;
+        // height: 574px;
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    &__mobile {
+        position: static;
+        top: 301px;
+        right: -92px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 26px;
+        padding-left: 26px;
+        padding-right: 21px;
+        padding-bottom: 20px;
+        width: 213px;
+        height: 411px;
+        background: url('../images/general/mobile.png') 0 0 / cover no-repeat;
+        
+        @include rmin($lg) {
+            position: absolute;
+            max-width: 996px;
+        }
+    }
+
+    &__mobile-image {
+        // width: 159px;
+        // height: 359px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 26px;
+        display: block;
+        
+    }
+
+}
+
+
+

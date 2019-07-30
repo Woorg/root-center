@@ -1,0 +1,257 @@
+ .battle-pass {
+    position: relative;
+    background: #14141a;
+    &:after {
+        position: absolute;
+        z-index: 1;
+        top: 208px;
+        left: 0;
+        width: 100%;
+        height: 230px;
+        content: '';
+        background-image: url('../images/general/battle-pass-shape-second.png');
+        background-position: calc(0% - 20px) calc(100% + 133px);
+        background-repeat: repeat-x;
+    }
+
+    &:before {
+        position: absolute;
+        top: 438px;
+        left: 0;
+        width: 100%;
+        height: 340px;
+        content: "";
+        background: #121116;
+    }
+
+
+    &__container {
+        @extend .container;
+        padding-top: (200px / 2);
+        padding-bottom: 0;
+        text-align: center;
+        @include rmin($lg) {
+            padding-top: 200px;
+            padding-bottom: 100px;
+        }
+    }
+
+    &__shape {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        width: 1420px;
+        height: 250px;
+    }
+
+
+    &__title {
+
+        // margin-bottom: 120px;
+        margin-bottom: (130px / 2);
+        @include rmin($lg) {
+            margin-bottom: 130px;
+        }
+
+    }
+
+
+    &__w {
+        position: relative;
+        z-index: 2;
+        left: 0;
+        // padding-top: 97px;
+        margin-right: 0;
+        padding-top: 0;
+        background-size: cover;
+        height: auto;
+        border-radius: 15px;
+        // transform: skew(-13deg);
+        @include rmin($lg) {
+            left: -8px;
+            margin-right: -20px;
+            padding-top: 112px;
+            height: 250px;
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            display: none;
+            width: 1420px;
+            height: 250px;
+            content: "";
+            background-image: url('../images/general/battle-pass-bg.png');
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            @include rmin($lg) {
+                display: block;
+
+
+            }
+        }
+
+        &:after {
+            position: absolute;
+            z-index: -1;
+            top: -13px;
+            right: 11px;
+            left: 43px;
+            // left: 34px;
+            width: 1365px;
+            // width: 100%;
+            height: 252px;
+            display: none;
+            content: '';
+            background: #333335;
+            border-radius: 15px;
+            transform: skew(-13deg);
+            @include rmin($lg) {
+                display: block;
+
+
+            }
+            // background-image: url('../images/general/hero-shape.png');
+            // background-position: calc(0% - 20px) calc(100% + 133px);
+            // background-repeat: repeat-x;
+        }
+    }
+
+
+    &__list {
+        @include resetlist();
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+
+        @include rmin($lg) {
+            flex-wrap: nowrap;
+        }
+    }
+
+
+    &__item {
+        position: relative;
+        margin-left: 0;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        width: 100%;
+        height: auto;
+        background: #333335;
+        border-radius: 15px;
+        // text-align: left;
+        @include rmin($lg) {
+            margin-bottom: 0;
+            margin-left: -20px;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 5px;
+            
+            padding-left: 113px;
+            width: 26%;
+            height: auto;
+            background: transparent;
+        }
+
+        &:after {
+            position: absolute;
+            top: -22px;
+            right: 0;
+            content: "";
+            width: 22px;
+            height: 81px;
+            background: none;
+            @include rmin($lg) {
+                background: url('../images/general/separator.png') 0 0 no-repeat;
+            }
+        }
+        
+        &:nth-child(1) {
+            // padding-left: 0;
+            // padding-right: 0;
+            width: 100%;
+            
+            @include rmin($lg) {
+                padding-left: 53px;
+                padding-right: 5px;
+                width: 371px;
+            }
+        }
+
+
+        &:nth-child(2) {
+            // padding-left: 47px;
+            // padding-right: 12px;
+            // padding-left: 32px;
+            // padding-right: 0;
+            width: 100%;
+            
+            @include rmin($lg) {
+                padding-left: 0;
+                padding-right: 2px;
+                width: 200px;
+            }
+
+        }
+
+
+        &:nth-child(3) {
+            // padding-left: 47px;
+            // padding-right: 12px;
+            // padding-left: 0;
+            // padding-right: 0;
+            width: 100%;
+            
+            @include rmin($lg) {
+                padding-left: 32px;
+                padding-right: 2px;
+                width: 244px;
+            }
+
+        }
+
+        
+        &:nth-child(4) {
+            // padding-left: 47px;
+            // padding-right: 12px;
+            // padding-left: 0;
+            // padding-right: 0;
+            width: 100%;
+            
+            @include rmin($lg) {
+                padding-left: 7px;
+                padding-right: 2px;
+                width: 279px;
+            }
+
+        }
+    
+        &:nth-child(5) {
+            // padding-left: 47px;
+            // padding-right: 12px;
+            // padding-left: 0;
+            // padding-right: 0;
+            width: 100%;
+            
+            @include rmin($lg) {
+                padding-left: 20px;
+                padding-right: 2px;
+                width: 371px;
+            }
+            
+            &:after {
+                display: none;
+                
+            }
+
+        }
+
+    }
+    
+
+ }

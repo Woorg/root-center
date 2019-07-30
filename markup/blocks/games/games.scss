@@ -1,0 +1,18 @@
+.games {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    &__game {
+        margin-top: (68px);
+        margin-right: 6px;
+        
+        @include rmin($sm) {
+             margin-top: 68px;
+        }
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

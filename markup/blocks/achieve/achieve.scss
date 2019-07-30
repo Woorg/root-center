@@ -1,0 +1,223 @@
+.achieve {
+    background: #14141a;
+    &__container {
+        @extend .container;
+        padding-top: (73px / 2);
+        padding-bottom: (88px / 2);
+        
+        @include rmin($sm) {
+            padding-top: 73px;
+            padding-bottom: 88px;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include rmin($sm) {
+             display: block;
+        }   
+    }
+
+    &__item {
+        position: relative;
+        // margin-top: -40px;
+        margin-bottom: 10px;
+        
+        width: 330px;
+        // height: 250px;
+        height: 110px;
+
+        display: flex;
+
+        background-size: cover;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        @include css-lock(14, 20, 320, 1400, font-size);
+        @include rmin($sm) {
+            margin-bottom: 0;
+            width: 1220px;
+            height: 250px;
+        }
+
+        &_first {
+            
+            .achieve__bg {
+                top: 0;
+
+                @include rmin($sm) {
+                    left: -160px;
+                }
+
+            }
+
+            .achieve__inner {
+                // padding-right: 239px;
+
+            }
+        }
+
+        &_second {
+            margin-top: 0;
+            @include rmin($sm) {
+                margin-top: -36px;
+            }
+            .achieve__bg {
+                top: 0;
+                right: 0;
+                left: 0;
+                
+                background-size: contain;
+                @include rmin($sm) {
+                    left: 0;
+                    right: -160px;
+                    // right: -340px;
+                    
+                    background-size: cover;
+                }
+
+                @include rmin($sm) {
+                    right: -340px;
+                }
+
+            }
+
+            .achieve__inner {
+                position: absolute;
+                top: calc(50%);
+                
+                right: 0;
+                left: 0;
+                padding-left: 0;
+                padding-right: 0;
+                    
+                // padding-left: 109px;
+                // padding-right: 160px;
+
+                width: 395px;
+                height: 94px;
+                
+                transform: translateY(-50%);
+                
+                @include rmin($sm) {
+                    top: calc(50% + 9px);
+                    left: 30px;
+                    right: -190px;
+                    width: 825px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+
+                @include rmin($lg) {
+                    top: calc(50% + 9px);
+                    left: auto;
+                    right: -190px;
+                    width: 825px;
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+
+            
+            .achieve__text {
+                padding-top: 0;
+                padding-bottom: 0;
+                
+                padding-left: 10px;
+                padding-right: 100px;
+
+                padding-top: 18px;
+                padding-right: 31px;
+                padding-left: 30px;
+                padding-bottom: 18px;
+
+
+                background-size: 100% 100%;
+                background-image: none;
+                background-repeat: no-repeat;
+                background-position: 0 0;
+                @include rmin($md) {
+                    padding-top: 24px;
+                    padding-right: 74px;
+                    padding-left: 69px;
+                    padding-bottom: 20px;
+                    background-image: url('../images/general/blockquote.png');
+                    background-size: 100% 100%;
+                }
+                @include rmin($lg) {
+                    padding-top: 24px;
+                    padding-right: 74px;
+                    padding-left: 109px;
+                    padding-bottom: 20px;
+                    background-image: url('../images/general/blockquote.png');
+                    background-size: 100% 100%;
+                }
+
+
+            }
+
+        }
+    }
+
+    &__bg {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: -170px;
+        width: 540px;
+        // height: 250px;
+        height: 110px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        
+        @include rmin($sm) {
+            left: 0;
+            width: 1220px;
+            height: 250px;
+            background-size: cover;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 1;
+
+        left: 0;
+        
+        padding-left: 0px;
+        padding-right:0px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-grow: 1;
+        
+        text-align: left;
+        
+        @include rmin($sm) {
+           left: auto;
+        }
+        
+        @include rmin($lg) {
+           padding-left: 103px;
+           padding-right: 0;
+           left: auto;
+        }
+    }
+
+    &__text {
+        // padding-right: 100px;
+        padding-left: 10px;
+        @include rmin($sm) {
+           padding-right: 0;
+           padding-left: 0;
+        }
+
+    }
+
+
+}

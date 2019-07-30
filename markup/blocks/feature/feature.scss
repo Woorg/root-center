@@ -1,0 +1,263 @@
+.feature
+{
+    position: relative;
+
+    display: block;
+    
+    padding-top: (148px / 2);
+    padding-bottom: 0;
+
+
+    @include rmin($lg) {
+        padding-top: 148px;
+        padding-bottom: 105px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+
+
+    &:after
+    {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+
+        width: 1720px;
+        height: 2px;
+
+        content: '';
+        transform: translateX(-50%);
+
+        background-image: url('../images/general//features-border.png');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+    }
+
+
+    // &_odd {
+    //     padding-left: 84px;
+    // }
+
+    // &_even {
+
+    // }
+
+
+    &:nth-child(odd)
+    {
+        padding-left: (84px / 2);
+        padding-left: 0;
+        @include rmin($lg) {
+            padding-left: 84px;
+            
+        }
+        .feature__entry {
+            
+        }
+
+        .feature__image {
+              position: relative;
+              top: -4px;
+              right: -150px;
+             
+        }
+
+    }
+
+
+    &:nth-child(even)
+    {
+        // padding-left: 84px;
+        padding-left: 0;
+        
+        padding-top: (98px / 2);
+        padding-bottom: (98px / 2);
+        @include rmin($sm) {
+            padding-top: (98px / 2);
+        }
+
+        @include rmin($lg) {
+            padding-top: (98px / 2);
+            padding-bottom: 6px;
+        }
+        .feature__entry {
+            max-width: 100%;
+            order: 1;
+            @include rmin($sm) {
+                max-width: 692px;
+                
+            }
+        }
+
+         .feature__image {
+            position: relative;
+            top: -54px;
+            right: auto;
+            left: 13px;
+            
+         }
+
+         .feature__list {
+             margin-right: -20px;
+         }
+    }
+
+
+    &:nth-child(3) {
+        padding-top: (140px / 2);
+        padding-bottom: 0;
+        @include rmin($lg) {
+            padding-top: 140px;
+            padding-bottom: 38px;
+        }
+        .feature__image {
+            
+            top: -19px;
+            right: -180px;
+            
+            @include rmin($sm) {
+                top: 0;    
+
+            }
+        }
+    }
+
+
+    &__image
+    {
+        position: relative;
+        top: 0;
+        right: -10px;
+
+        flex-grow: 1;
+        max-width: 80%;
+        
+        @include rmin($sm) {
+            top: 144px;
+
+            right: -80px;
+
+        }
+        
+
+        img {
+            max-width: 100%;
+            height: auto;
+            @include rmin($sm) {
+
+            }
+        }
+    }
+
+    &__entry
+    {
+        position: relative;
+        z-index: 1;
+        max-width: 100%;
+        display: block;
+        text-align: left;
+        
+        @include rmin($lg) {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            flex-grow: 1;
+            max-width: 690px;
+        }
+        
+
+    }
+
+    &__title
+    {
+        margin-bottom: (40px / 2);
+        
+        @include rmin($sm) {
+            margin-bottom: 41px;
+
+        }
+    }
+
+    &__list
+    {
+        // margin-bottom: 50px;
+        // margin-bottom: 39px;
+        margin-bottom: (49px / 2);
+        font-size: 14px;
+        @include css-lock(14, 18, 320, 1400, font-size);
+
+        @include resetlist();
+        @include rmin($sm) {
+            margin-bottom: 49px;
+
+        }
+    }
+
+    &__list-item
+    {
+        position: relative;
+        // margin-bottom: 20px;
+
+        margin-bottom: 13px;
+        // padding-left: 30px;
+        padding-left: 33px;
+
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+
+        &:after
+        {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            content: '';
+        }
+
+        &:nth-child(1)
+        {
+            &:after
+            {
+                @include bg($list-item-1);
+                top: -5px;
+                left: -12px;
+                
+            }
+        }
+
+        &:nth-child(2)
+        {
+            &:after
+            {
+                @include bg($list-item-2);
+                  top: -6px;
+                  left: -14px;
+            }
+        }
+
+        &:nth-child(3)
+        {
+            &:after
+            {
+                @include bg($list-item-3);
+                top: -9px;
+                left: -12px;
+            }
+        }
+    }
+
+
+    &__button
+    {
+        margin-top: 47px;
+        padding-top: 19px;
+        padding-right: 65px;
+        padding-bottom: 18px;
+        padding-left: 65px;
+    }
+}

@@ -1,0 +1,127 @@
+.footer {
+    background: #100F13;
+    overflow: hidden;
+    
+
+    &__container {
+        position: relative;
+        padding-top: 50px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        @include rmin($sm) {
+            padding-top: 100px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 100px;
+
+        }
+
+         @include rmin($lg) {
+            padding-top: 505px;
+            padding-left: 0;
+            padding-right: 0;
+            padding-bottom: 272px;
+
+        }
+
+        &:after {
+            position: absolute;
+            z-index: 0;
+            top: 294px;
+            left: -147px;
+            display: none;
+            content: "";
+            width: 1140px;
+            height: 600px;
+            background: url('../images/general/footer-bg.png') 0 0 / cover no-repeat;
+            // border-radius: 15px;
+            // transform: skew(-13deg);
+            
+            @include rmin($lg) {
+                display: block;
+            }
+
+        }
+    }
+
+
+    &__w {
+        position: relative;
+        z-index: 1;
+        order: 1;
+        @include rmin($xl) {
+            margin-bottom: 92px;
+        }
+
+    }
+
+    &__logo {
+        margin-bottom: 26px;
+
+    }
+
+    &__text {
+        margin-bottom: 26px;
+        opacity: 0.4;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0.4px;
+
+        @include rmin($lg) {
+            margin-bottom: 92px;
+            
+        }
+
+    }
+
+    &__nav {
+        margin-bottom: 50px;
+
+        @include rmin($lg) {
+            margin-bottom: 135px;
+            
+        }
+
+    }
+
+
+
+
+    &__social {
+        margin-left: 0;
+        
+        @include rmin($xl) {
+            margin-left: 485px;
+        }
+    }
+
+    &__video {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-left: 0;
+        margin-bottom: 30px;
+        @include rmin($sm) {
+            position: relative;
+            top: 0;
+            right: 0;
+
+        }
+
+
+        @include rmin($lg) {
+            position: absolute;
+            top: 397px;
+            right: -144px;
+            // padding-top: 505px;
+            padding-bottom: 272px;
+        }
+    }
+
+}
+

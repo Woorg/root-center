@@ -1,0 +1,43 @@
+.nav {
+    
+    &__list {
+        display: block;
+        @include resetlist();
+        
+        @include rmin($sm) {
+            flex-wrap: wrap;
+            display: flex;   
+        }
+    }
+
+
+    &__item {
+        margin-right: 39px;
+        margin-bottom: 20px;
+        // width: 100%;
+        @include rmin($xl) {
+            margin-bottom: 0;
+            width: auto;
+        }
+
+    }
+
+    &__link {
+        font-size: 16px;
+        line-height: 1;
+        color: #ffffff;
+        letter-spacing: 0.32px;
+        @include tr(color .3s ease);
+        &:hover {
+            color: darken(#ffffff, 10);
+            @include tr(color .3s ease);
+
+        }
+
+
+    }
+
+
+
+
+}

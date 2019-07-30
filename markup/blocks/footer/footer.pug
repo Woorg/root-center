@@ -1,0 +1,50 @@
+mixin footer(data)
+    .footer
+        .footer__container.container
+            .footer__w
+                a.footer__logo.logo(href="#") Beleague
+                .footer__text Твой путь в киберспорт
+                nav.footer__nav.nav
+                    ul.nav__list
+                        li.nav__item
+                            a.nav__link(href="#link 1") Турниры
+                        li.nav__item
+                            a.nav__link(href="#link 2") Личный кабинет
+                        li.nav__item
+                            a.nav__link(href="#link 3") Контакты
+                        li.nav__item
+                            a.nav__link(href="#link 4") Политика конфиденциальности
+                        li.nav__item
+                            a.nav__link(href="#link 5") Лига
+                        li.nav__item
+                            a.nav__link(href="#link 6") Battle pass
+
+
+                .footer__social.social
+                    a.social__link.social__link_vk(href="#link") 
+                        != pugHelpers.Icon.call(locals, { iconName: 'vk', className: 'social__icon' })
+
+                    a.social__link.social__link_twitter(href="#link")
+                        != pugHelpers.Icon.call(locals, { iconName: 'twitter', className: 'social__icon' })
+
+                    a.social__link.social__link_facebook(href="#link") 
+                        != pugHelpers.Icon.call(locals, { iconName: 'facebook', className: 'social__icon' })
+
+                    a.social__link.social__link_instagram(href="#link") 
+                        != pugHelpers.Icon.call(locals, { iconName: 'instagram', className: 'social__icon' })
+
+                    a.social__link.social__link_twitch(href="#link") 
+                        != pugHelpers.Icon.call(locals, { iconName: 'twitch', className: 'social__icon' })
+
+                    a.social__link.social__link_discord(href="#link") 
+                        != pugHelpers.Icon.call(locals, { iconName: 'discord', className: 'social__icon' })
+
+
+            .footer__video.video
+                // |<iframe  class="video__mask" src="https://www.youtube.com/embed/GlIzuTQGgzs&modestbranding=1&autohide=1&showinfo=0&controls=0&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+                |<embed class="video__mask" src="http://www.youtube.com/v/GlIzuTQGgzs?0&modestbranding=0&autohide=1&showinfo=0&controls=0&mute=1&autoplay=1" wmode="transparent" type="application/x-shockwave-flash" width="100%" height="100%" allowfullscreen="true" title="Adobe Flash Player">
+
+
+
+

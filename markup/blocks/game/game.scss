@@ -1,0 +1,241 @@
+.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 403px;
+    height: 120px;
+    color: #fff;
+    font-family: $b;
+    font-size: 250px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 297.56px;
+    text-transform: uppercase;
+    border-radius: 10px 10px / 10px 10px;
+    
+    &_dota-underlord {
+        @include bg($game-bg-dota);
+        
+        .game__shape {
+            bottom: -82px;
+            right: -72px;
+            width: 326px;
+            height: 329px;
+            background: url('../images/general/game-shape-dota.png');
+        }
+
+        .game__image {
+            bottom: 82px;
+            right: 78px;
+        }
+
+        .game__inner {
+
+         
+        }
+        
+    }
+
+    &_csgo {
+        @include bg($game-bg-csgo);
+        
+        .game__shape {
+            bottom: -82px;
+            right: -24px;
+            width: 329px;
+            height: 340px;
+            background: url('../images/general/game-shape-csgo.png');
+        }
+
+        .game__image {
+            bottom: 82px;
+            right: 83px;
+        }
+
+        .game__inner {
+            
+           
+        }
+        
+    }
+
+    &_dota2 {
+        @include bg($game-bg-dota2);
+        
+        .game__shape {
+            bottom: -82px;
+            right: -49px;
+            width: 396px;
+            height: 342px;
+            background: url('../images/general/game-shape-dota2.png');
+        }
+
+        .game__image {
+            bottom: 82px;
+            right: 73px;
+        }
+
+        .game__inner {
+            
+           
+        }
+        
+    }
+
+    &_pugb {
+        @include bg($game-bg-pubg);
+
+        .game__shape {
+            bottom: -82px;
+            right: -40px;
+            width: 281px;
+            height: 322px;
+            background: url('../images/general/game-shape-pubg.png');
+        }
+
+        .game__image {
+            bottom: 82px;
+            right: 66px;
+        }
+
+        .game__inner {
+            
+          
+        }
+        
+    }
+
+    &_teamfight {
+        @include bg($game-bg-team);
+        
+        .game__shape {
+            bottom: -73px;
+            right: -54px;
+            width: 390px;
+            height: 310px;
+            background: url('../images/general/game-shape-team.png');
+        }
+
+        .game__image {
+            bottom: 76px;
+            right: 78px;
+        }
+
+        .game__inner {
+          
+        }
+        
+    }
+
+    &_fortnite {
+        @include bg($game-bg-fortnite);
+        
+        .game__shape {
+            bottom: 0;
+            right: 25px;
+            width: 130px;
+            height: 178px;
+            background: url('../images/general/game-shape-fortnite.png');
+        }
+
+        .game__image {
+            bottom: 0;
+            right: 0;
+        }
+
+        .game__inner {
+            
+           
+        }
+        
+    }
+
+    &_apex {
+        @include bg($game-bg-apex);
+        
+        .game__shape {
+            bottom: -82px;
+            right: -25px;
+            width: 245px;
+            height: 334px;
+            background: url('../images/general/game-shape-apex.png');
+        }
+
+        .game__image {
+            bottom: 82px;
+            right: 73px;
+        }
+
+        .game__inner {
+            
+          
+        }
+        
+    }
+
+    &__link {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    &__shape {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: block;
+    }
+
+
+    &__inner {
+        position: relative;
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+
+        
+        font-weight: 700;
+        font-style: italic;
+        line-height: 1;
+        
+    }
+
+
+    &__text {
+        position: absolute;
+        top: calc(50% + 6px);
+        left: 50px;
+        right: 0;
+        transform: translateY(-50%);
+        
+    }
+
+    &__title {
+        margin-bottom: 3px;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__status {
+        opacity: 0.3;
+        font-family: $o;
+        font-size: 16px;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+
+}
+
