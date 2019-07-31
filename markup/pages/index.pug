@@ -5,14 +5,17 @@ html(class="no-js", lang="ru")
     
     include ../blocks/header/header.pug
     include ../blocks/hero/hero.pug
-
-    include ../blocks/play/play.pug
-    include ../blocks/tournaments/tournaments.pug
-    include ../blocks/achieve/achieve.pug
-    include ../blocks/features/features.pug
-    include ../blocks/battle-pass/battle-pass.pug
-    include ../blocks/join/join.pug
-    include ../blocks/cta/cta.pug
+    include ../blocks/view/view.pug
+    include ../blocks/specifications/specifications.pug
+    include ../blocks/colors/colors.pug
+    include ../blocks/sizes/sizes.pug
+    include ../blocks/how/how.pug
+    include ../blocks/photo/photo.pug
+    include ../blocks/questions/questions.pug
+    include ../blocks/reviews/reviews.pug
+    include ../blocks/video/video.pug
+    include ../blocks/geo/geo.pug
+    include ../blocks/share/share.pug
 
     include ../blocks/footer/footer.pug
 
@@ -27,16 +30,33 @@ html(class="no-js", lang="ru")
             +hero()
         
             main.page__inner
-                +play()
-                +tournaments()
-                +achieve()
-                +features()
-                +battle-pass()
-                +join()
-                +cta()
-
+                +view()
+                +specifications()
+                +colors()
+                +sizes()
+                +how()
+                +photo()
+                +questions()
+                +reviews()
+                +video()
+                +geo()
+                +share()
             .page__footer
                 +footer()
 
 
+
+        
+        script(src='//yastatic.net/es5-shims/0.0.2/es5-shims.min.js')
+        script(src='//yastatic.net/share2/share.js')
+        script(src='//api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU&8bccaf23-e575-42cc-af50-937b35ec0ab1')
+        
+        //- script(src='assets/js/separate-js/svg4everybody.min.js')
+        script(src='assets/js/separate-js/jquery.min.js')
+
+        script(src='assets/js/separate-js/lazyload.min.js')
+        script(src='assets/js/separate-js/slick.min.js')
+        script(src='assets/js/separate-js/jquery.mask.min.js')
+
+        
         script(src='%=static=%js/main%=hash=%%=min=%.js')

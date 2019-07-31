@@ -1,0 +1,25 @@
+.specifications {
+    
+    &__container {
+        padding-top: 42px;
+        padding-bottom: 50px;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 39px;   
+    }
+
+    &__table-w {
+        position: relative;
+        overflow: auto;
+
+    }
+
+    &__table {
+        position: relative;
+        text-align: left;
+        
+    }
+
+}

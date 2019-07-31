@@ -1,0 +1,34 @@
+.geo {
+
+    &__container {
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 34px;
+    }
+
+    &__map {
+        position: relative;
+        // padding-bottom: 39.5454545454545%;
+        padding-bottom: 50.445455%;
+        height: 0;
+        overflow: hidden;
+        
+        @include rmin($sm) {
+            padding-bottom: 30.445455%;
+            
+        }
+
+    }
+
+    &__object {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+    
+}

@@ -15,10 +15,8 @@
 }           
 
 a {
-    color: #FFF;
     text-decoration: none;
     &:hover {
-        color: #FFF;
         text-decoration: none;
     }
 }
@@ -36,47 +34,42 @@ a {
 }
 
 .button {
+    border: none;
     display: inline-block;
     vertical-align: baseline;
-    height: 60px;
-    background: #ff55d9;
+    height: 39px;
+    background-color: #fee51e;
+    color: #0f0e0e;
+    font-family: $a;
     font-size: 18px;
-    @include css-lock(14, 18, 320, 1400, font-size);
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 40px;
+    font-weight: 500;
+    line-height: 1;
+    @include css-lock(14, 18, 320, 1130, font-size);
     text-align: center;
     white-space: nowrap;
-    box-shadow: 0 0 20px #ff55d9;
-    border-radius: 30px 30px / 30px 30px;
+    border-radius: 30px;
     @include tr(all .3s ease);
     @include rmin($sm) {
+
     }
 
     &:hover {
-        background: #b4459b;
-        color: #b5b5b5;
-        border-radius: 40px;
-        box-shadow: 0 0 20px #ff55d9;
-        @include tr(all .3s ease)
+        background-color: darken(#fee51e, 10);
+        color: #0f0e0e;
+        @include tr(all .3s ease);
     }
 
     &_big {
-        height: 80px;
-        border-radius: 40px 40px / 40px 40px;
+        height: 46px;
     }
-    &_big-second {
-        height: 80px;
-        background: #ffffff;
-        color: #282633;
-        border-radius: 40px;
-        box-shadow: 0 0 20px #18171f;
+    &_small {
+        height: 32px;
+        background-color: #e9e9e9;
+        color: #010101;
+        font-size: 15px;
+        font-weight: 300;
         &:hover {
-            background-color: #929292;
-
-            color: #282633;
-            box-shadow: 0 0 20px #18171f;
+             background-color: darken(#e9e9e9, 10);
         }
         
     }
@@ -86,43 +79,49 @@ a {
 
 .title {
     color: #ffffff;
-    font-family: $o;
+    font-family: $a;
+    text-transform: uppercase;
     &_h1 {
-        font-size: 60px;
+        font-size: 54px;
         font-weight: 700;
         line-height: 1.3;
-        
-        @include css-lock(30, 60, 320, 1400, font-size);
+        // letter-spacing: 1.1px;
+        letter-spacing: 0.2px;
+        @include css-lock(30, 54, 320, 1129, font-size);
         
     }
     &_h2 {
-        font-size: 40px;
+        color: #032f6b;
+        font-size: 36px;
         font-weight: 700;
-        line-height: 1.3;
+        line-height: 1.1;
         
-        @include css-lock(20, 40, 320, 1400, font-size);
+        @include css-lock(18, 36, 320, 1130, font-size);
     }
     &_h3 {
+        color: #000000;
         font-size: 30px;
         font-weight: 700;
-        @include css-lock(20, 30, 320, 1400, font-size);
+        @include css-lock(18, 30, 320, 1130, font-size);
+        
     }
     &_h4 {
-        font-size: 20px;
-        font-weight: 400;
+        color: #0f0e0e;
+        font-size: 24px;
+        font-weight: 700;
         line-height: 1.5;
-        
-        @include css-lock(16, 20, 320, 1400, font-size);
+        @include css-lock(16, 24, 320, 1130, font-size);
     }
-    &_h5 {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 1.4;   
-    }
-    &_h6 {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 1.5;
-    }
+
+    // &_h5 {
+    //     font-size: 18px;
+    //     font-weight: 400;
+    //     line-height: 1.4;   
+    // }
+    // &_h6 {
+    //     font-size: 16px;
+    //     font-weight: 400;
+    //     line-height: 1.5;
+    // }
 }
 

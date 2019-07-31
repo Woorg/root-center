@@ -1,2 +1,7 @@
 mixin video(data)
-    .video
+    .video&attributes(attributes)
+        .video__container.container
+            h2.video__title.title.title_h2 Видео о профилированном поликарбонате
+            .video__w
+                .video__object
+                    | <iframe class="lazy" data-src="https://www.youtube.com/embed/8vJSCmIMIjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

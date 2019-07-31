@@ -1,0 +1,11 @@
+include ../form/form
+
+mixin questions(data)
+    .questions#callback&attributes(attributes)
+        .questions__container.container
+            .questions__w
+                h2.questions__title.title.title_h2 Остались вопросы? Нужна консультация?
+                .questions__text Заполните заявку, подберем строительные материалы на выгодных условиях
+                +form().questions__form
+
+                .questions__note Наш менеджер свяжется с вами в течение 30 минут

@@ -1,0 +1,112 @@
+.view {
+    
+    &__container {
+        padding-top: 65px;
+        padding-bottom: 40px;
+        text-align: center;
+
+    }
+
+
+    &__title {
+        margin-bottom: 41px;
+
+    }
+
+
+    &__list {
+        @include resetlist();
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        
+        @include rmin($sm) {
+            justify-content: flex-start;
+
+        }
+        
+    }
+
+
+    &__item {
+        position: relative;
+        margin-bottom: 20px;
+        // margin-right: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
+        width: auto;
+        // height: 229px;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 44%;
+        background-color: #ffffff;
+        text-align: center;
+        box-shadow: -4px 26px 87px rgba(0, 28, 67, 0.1);
+        
+        &:last-child {
+            margin-right: 0;
+
+        }
+
+        @include rmin($sm) {
+            flex-basis: 30%;
+
+        }
+
+
+        @include rmin($lg) {
+            margin-bottom: 0px;
+            width: 232px;
+            height: 229px;
+            flex-basis: auto;
+
+        }
+        
+    }
+
+    &__link {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        cursor: pointer;
+    }
+
+    &__image {
+        flex-grow: 1;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+    }
+
+
+    &__item-title {
+        padding-bottom: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        color: #0f0e0e;
+        // font-size: 19px;
+        @include css-lock(14, 19, 320, 1130, font-size);
+        font-weight: 500;
+        line-height: 1.2;
+        
+
+        @include rmin($sm) {
+
+            padding-bottom: 15px;
+            padding-right: 22px;
+            padding-left: 28px;
+
+        }
+        
+    }
+
+}

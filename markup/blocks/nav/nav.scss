@@ -1,32 +1,46 @@
 .nav {
-    
+    border-bottom: 1px solid #919397;
     &__list {
-        display: block;
         @include resetlist();
+        flex-wrap: nowrap;
+        display: flex;
+        justify-content: flex-start;
+        overflow: auto;
         
         @include rmin($sm) {
-            flex-wrap: wrap;
-            display: flex;   
+            // margin-left: 77px;
+            justify-content: center;
+
         }
     }
 
 
     &__item {
-        margin-right: 39px;
-        margin-bottom: 20px;
-        // width: 100%;
-        @include rmin($xl) {
-            margin-bottom: 0;
-            width: auto;
+        margin-right: 18px;
+        // margin-bottom: 14px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        
+        @include rmin($sm) {
+            
+        }
+
+        &:last-child {
+            
+            margin-right: 0;
+
         }
 
     }
 
     &__link {
-        font-size: 16px;
+        font-size: 14px;
+        font-weight: 700;
         line-height: 1;
         color: #ffffff;
+        line-height: 1.4375;
         letter-spacing: 0.32px;
+        text-transform: uppercase;
         @include tr(color .3s ease);
         &:hover {
             color: darken(#ffffff, 10);
@@ -34,6 +48,11 @@
 
         }
 
+
+        @include rmin($sm) {
+            font-size: 16px;
+
+        }
 
     }
 

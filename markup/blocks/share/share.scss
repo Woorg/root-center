@@ -1,0 +1,47 @@
+.share {
+    background-image: linear-gradient(89deg, #ffd736 0%, #ff9907 100%);
+
+    &__container {
+        padding-top: 38px;
+        padding-bottom: 48px;
+        text-align: center;
+
+    }
+
+    &__title {
+        margin-bottom: 18px;
+    }
+
+
+    &__widget {
+        margin: auto;
+        text-align: center;
+        // max-width: 470px;
+    }
+    .ya-share2__badge {
+        border-radius: 5px;
+    }
+    .ya-share2__container_size_m .ya-share2__icon {
+        width: (40px / 2);
+        height: (40px / 2);
+        
+        @include rmin($sm) {
+            width: 40px;
+            height: 40px;
+            
+        }
+
+    } 
+
+    .ya-share2__link {
+        width: (40px / 2);
+        height: (40px / 2);
+        
+        @include rmin($sm) {
+            width: 40px;
+            height: 40px;
+            
+        }
+    }
+}
+

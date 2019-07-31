@@ -8,18 +8,17 @@ body
 
 .page
 {
-    font-family: $o;
-    font-size: 18px;
-    font-weight: 400;
-
-    display: flex;
-    overflow: h;
-    flex-direction: column;
-
     min-height: 100vh;
+    font-family: $a;
+    font-size: 17px;
+    font-weight: 500;
+
+    // display: flex;
+    // overflow: hidden;
+    // flex-direction: column;
 
     color: #fff;
-    background-color: #18171f;
+    background-color: #f9f9f9;
 
     font-display: swap;
 
@@ -47,9 +46,9 @@ body
 
 .container
 {
-    width: 100%;
-    max-width: 1430px;
     margin: auto;
+    max-width: 1030px;
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }

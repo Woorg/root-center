@@ -1,0 +1,144 @@
+.how
+{
+    // background-color: #153c01;
+    background-image: linear-gradient(89deg, #ffd736 0%, #ff7007 100%);
+    &__container
+    {
+        padding-top: 60px;
+        padding-bottom: 93px;
+
+        text-align: center;
+    }
+
+    &__title
+    {
+        margin-bottom: 50px;
+        // font-size: 48px;
+        @include css-lock(24, 48, 320, 1130, font-size);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        color: #0f0e0e;
+        span
+        {
+            // font-size: 30px;
+            font-weight: 500;
+            @include css-lock(18, 30, 320, 1130, font-size);
+            display: block;
+        }
+    }
+
+    &__list
+    {
+        @include resetlist();
+        padding-left: 0;
+        padding-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        counter-reset: section; 
+
+        text-align: left;
+        
+        @include rmin($sm) {
+            
+            padding-left: 50px;
+
+        }
+
+
+    }
+
+
+    &__item
+    {
+        position: relative;
+        margin-bottom: 30px;
+        padding-top: 72px;
+        // flex-grow: 1;
+        flex-basis: 50%;
+        counter-increment: section;             
+        // width: 25%;
+        
+        color: #0f0e0e;
+        
+        
+        @include rmin($sm) {
+            
+            flex-basis: 33%;
+        }
+
+        @include rmin($lg) {
+            
+            flex-basis: 27.5%;
+        }
+
+
+
+
+        &:last-child {
+            
+            margin-right: -95px;
+            
+            &:after {
+                
+                display: none;
+
+            }
+
+        }
+
+
+        &:after {
+            position: absolute;
+            top: 30px;
+            right: 22px;
+            width: 162px;
+            height: 3px;
+            content: '';
+            display: none;
+            background-color: #ffffff;
+            
+            @include rmin($sm) {
+            
+                display: block;
+            }
+
+        }
+
+    }
+
+    &__number {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 60px;
+        height: 60px;
+        background: #FFF;
+        border-radius: 50%;
+        
+        &:before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: counter(section);
+            color: #ffc02c;
+            font-family: $a;
+            font-size: 36px;
+            font-weight: 500;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+
+
+    &__text {
+        color: #0f0e0e;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 1.17;
+    }
+
+}

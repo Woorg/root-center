@@ -1,46 +1,91 @@
 .header
 {
+    &__nav
+    {
+        position: relative;
+        z-index: 1;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
     &__container
     {
-        padding-top: 50px;
-        padding-bottom: 50px;
+        position: relative;
+        z-index: 2;
+    }
+
+
+    &__body
+    {
+        padding-top: 26px;
+        padding-bottom: 30px;
+    }
+
+    &__logo-w
+    {
+        max-width: 290px;
     }
 
     &__logo
     {
-        margin-top: 0;
-        margin-right: auto;
-        margin-bottom: 30px;
-        margin-left: auto;
+        margin-bottom: 11px;
+
+        @include rmin($sm)
+        {
+        }
+        @include rmin($md)
+        {
+        }
+    }
+
+    &__slogan
+    {
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1.2;
+
+        color: #d5dae0;
+        text-align: center;
         
         @include rmin($sm) {
-            margin-left: 0;
-            margin-right: 0;
-            margin-bottom: 0;
-            margin-top: 9px;
-
-        }
-
-
-        @include rmin($md) {
-            margin-left: 85px;
-            margin-right: 0;
-            margin-bottom: 0;
-            margin-top: 9px;
-
-        }
-
+            text-align: left;
             
-            
-
+        }
     }
-    &__auth
+
+
+
+    &__body
     {
         display: flex;
         flex-wrap: wrap;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        
         justify-content: center;
-        @include rmin($sm) {
-            justify-content: flex-end;
+
+        
+        @include rmin($md)
+        {
+            justify-content: space-between;
+
+        }
+
+
+
+    }
+
+    &__contacts
+    {
+        margin-top: 9px;
+        max-width: 420px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        @include rmin($md)
+        {
+            margin-top: 4px;
+            justify-content: center;
 
         }
 
@@ -48,15 +93,75 @@
 
     &__button
     {
-        margin-right: 0;    
-        padding-top: 19px;
-        padding-right: 55px;
-        padding-bottom: 16px;
-        padding-left: 55px;
-        @include rmin($sm) {
-            margin-right: 33px;
-            padding-right: 55px;
+        margin-left: 23px;
+        padding-top: 12px;
+        padding-right: 29px;
+        padding-bottom: 10px;
+        padding-left: 31px;
+        width: 100%;
+        @include rmin($sm)
+        {
+
+            width: auto;
+
         }
+    }
+}
+
+
+
+
+.phone {
+    margin-bottom: 9px;
+    color: #ffffff;
+    font-family: $a;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    text-transform: uppercase;
+    width: auto;
+    @include rmin($sm)
+    {
+        margin-bottom: 0;
+        width: auto;
 
     }
+    &__text {
+        font-size: 14px;
+        font-weight: 700;
+        color: #d5dae0;
+        text-transform: none;
+    }
+
+
+    &:hover {
+        color: lighten(#ffffff, 10);
+        @include tr(color .3s ease);
+    }
+
+    &_second {
+        position: relative;
+        padding-left: 19px;
+        color: #010101;
+        font-weight: 500;
+        text-transform: uppercase;
+        @include tr(color .3s ease);
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            content: "";
+            @include bg($phone-icon);
+            transform: translateY(-50%);
+            
+        }
+    
+        &:hover {
+            color: lighten(#010101, 10);
+            @include tr(color .3s ease);
+            
+        }
+    }
+
 }

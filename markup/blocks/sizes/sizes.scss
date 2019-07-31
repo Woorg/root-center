@@ -1,0 +1,40 @@
+.sizes {
+    
+    &__container {
+        padding-top: 35px;
+        padding-bottom: 45px;
+        text-align: center;
+
+    }
+
+
+    &__title {
+        margin-bottom: 36px;
+        color: #032f6b;
+        
+    }
+
+
+    &__table-w {
+        margin-bottom: 50px;
+        margin-right: 0px;
+        margin-left: 0px;
+        max-width: 100%;
+        overflow: auto;
+
+
+        @include rmin($sm) {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+
+        @include rmin($lg) {
+            margin-bottom: 50px;
+            margin-right: 50px;
+            margin-left: 50px;
+        }
+
+    }
+
+}

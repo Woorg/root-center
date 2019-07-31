@@ -1,15 +1,18 @@
 include ../header/header.pug
-include ../games/games.pug
+include ../use/use.pug
 
 mixin hero(data)
-    .hero.lazy-background(data-bg="%=static=%images/general/hero-bg.jpg" style="background-image: url('%=static=%images/general/hero-bg.jpg');")
+    .hero.lazy&attributes(attributes)(data-bg="url(assets/images/content/hero-bg.jpg)" )
 
         +header()
 
         .hero__container.container
-            h1.hero__title.title.title_h1 Competitive gaming platform
-            h2.hero__text Play Virtual Games & Earn Real Money
-            a.hero__button.button.button_big(href="#") зарегистрироваться
+            h1.hero__title.title.title_h1 Профилированный поликарбонат
+            .hero__text —  современное решение для светопрозрачной кровли
 
-        +games().hero__games
+
+
+            +use().hero__use
+
+
 

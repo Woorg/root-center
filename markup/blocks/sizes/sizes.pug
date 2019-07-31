@@ -1,0 +1,10 @@
+include ../table/table
+
+
+mixin sizes(data)
+    .sizes&attributes(attributes)
+        .sizes__container.container
+            h2.sizes__title.title.title_h2 Размеры профилированного <br/>поликарбоната
+
+            .sizes__table-w
+                +table-sizes().sizes__table

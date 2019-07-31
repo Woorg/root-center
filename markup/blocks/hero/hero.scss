@@ -1,41 +1,34 @@
 .hero {
     position: relative;
-    background: radial-gradient(circle 974px at center, rgba(40, 37, 50, 0) 0%, #282532 100%);
-    // background-image: url('../images/general/hero-bg.jpg');
-    // background-position: calc(50% - 350px) 0;
-    background-position: calc(50%) 0;
-    
+    background-position: 50% 0;
     background-repeat: no-repeat;
-    // height: 1100px;
-    background-color: #272532;
+    background-color: #403833;
+    background-size: cover;
     
     @include rmin($sm) {
-        // background: red;
+        // height: 745px;
     }
 
-    // overflow: hidden;
     
     &:after {
         position: absolute;
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 230px;
+        height: 100%;
         content: '';
-        background-image: url('../images/general/hero-shape.png');
-        background-position: calc(0% - 0px) calc(100% + 133px);
-        background-repeat: repeat-x;
+        background: rgba(0, 0, 0, .6);
     }
     &__container {
-        padding-top: (156px / 2);
-        padding-bottom: (79px / 2);
+        position: relative;
+        z-index: 1;
+        padding-top: 17px;
+        padding-bottom: 50px;
         text-align: center;
         
         overflow: hidden;
 
         @include rmin($sm) {
-            padding-top: 156px;
-            padding-bottom: 79px;
 
 
         }
@@ -44,11 +37,18 @@
     }
 
     &__title {
-        margin-bottom: 30px;
-        @include css-lock(30, 60, 320, 1400, font-size);
+        margin-bottom: 7px;
+        @include css-lock(30, 54, 320, 1400, font-size);
+        
+        @include rmin($lg) {
+            // margin-top: 56px;
+            white-space: nowrap;
+
+        }
     }
 
     &__text {
+        margin-bottom: 49px;
         font-size: 24px;
         font-weight: 700;
         line-height: 1.25;

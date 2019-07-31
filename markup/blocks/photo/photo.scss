@@ -1,0 +1,139 @@
+ .photo {
+
+    &__container {
+         padding-top: 50px;
+         padding-bottom: 50px;
+
+    }
+
+    &__w {
+        position: relative;
+        z-index: 1;
+        margin-top: -93px;
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 21px;
+        padding-left: 20px;
+        padding-bottom: 15px;
+        padding-right: 20px;
+        border-radius: 10px;
+        background: #fff;
+        text-align: center;
+        box-shadow: -4px 26px 87px rgba(0, 28, 67, 0.1);
+        
+        @include rmin($sm) {
+            margin-left: 50px;
+            margin-right: 50px;
+            padding-top: 41px;
+        }
+            
+
+    }
+    
+    &__title {
+        margin-bottom: 43px;
+
+    }
+
+
+    &__slider {
+        position: relative;
+        margin-bottom: 15px;
+
+    }
+
+
+    &__image {
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+
+    &__thumbs {
+        position: relative;
+
+        .photo__image {}
+
+        .slick-current {
+            
+            &.photo__image {
+                position: relative;
+                
+                &:after {
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    right: 3px;
+                    bottom: 0;
+                    left: 0;
+                    border: 5px solid #fee51e;
+                    content: '';
+                    @include tr(border .3s ease);
+                }
+            }
+            
+
+        }
+
+    }
+
+
+    
+
+    .slick-arrow {
+        position: absolute;
+        z-index: 1;
+        top: 50%;
+        width: 52px;
+        height: 52px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        text-indent: -9999px;
+        transform: translateY(-50%) rotate(0deg);
+        opacity: 1;
+        @include tr(opacity .3s ease);
+        &:after {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 32px;
+            content: "";
+            background: url('../images/general/slider-nav.png') 0 0 no-repeat;
+            transform: translate(-50%, -50%);
+        }
+
+
+        &:hover {
+            opacity: 0.9;
+            @include tr(opacity .3s ease);
+        }
+
+    }
+
+
+
+    .slick-prev {
+        left: 20px;
+        
+        &:after {
+
+        }
+    }
+
+
+    .slick-next {
+        right: 20px;
+        
+        &:after {
+
+            transform: translate(-50%, -50%) rotate(180deg);
+            
+        }
+    }
+
+ }

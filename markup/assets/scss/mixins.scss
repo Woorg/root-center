@@ -426,16 +426,16 @@
   transform: scale($var);
 }
 
-@mixin counter($var, $sep) {
-  counter-reset: list + $var;
+// @mixin counter($var, $sep) {
+//   counter-reset: list + $var;
 
-  > li {
-    &:before {
-      content: counter(list + $var) $sep;
-      counter-increment: list + $var;
-    }
-  }
-}
+//   > li {
+//     &:before {
+//       content: counter(list + $var) $sep;
+//       counter-increment: list + $var;
+//     }
+//   }
+// }
 
 @mixin f($name, $font-size: null, $letter-spacing: null) {
   $font-family: null;

@@ -1,0 +1,10 @@
+include ../table/table
+
+
+mixin specifications(data)
+    .specifications&attributes(attributes)
+        .specifications__container.container
+            h2.specifications__title.title.title_h2 Характеристики профилированного <br/>поликарбоната
+
+            .specifications__table-w
+                +table().specifications__table

@@ -1,9 +1,28 @@
 mixin header(data)
-    .header
-        .header__container.container-fluid
-            .row
-                .col-12.col-sm-6
-                    a.header__logo.logo(href="#") Beleague
-                .col-12.col-sm-6
-                    .header__auth
-                        a.header__button.button(href="#") войти через steam
+    .header&attributes(attributes)
+        nav.header__nav.nav
+            .header__container.container
+                ul.nav__list
+                    li.nav__item
+                        a.nav__link(href="#") Продукция
+                    li.nav__item
+                        a.nav__link(href="#") О профилированном поликарбонате
+                    li.nav__item
+                        a.nav__link(href="#") Монтаж
+                    li.nav__item
+                        a.nav__link(href="#") Расчет кровли
+                    li.nav__item
+                        a.nav__link(href="#") Доставка
+                    li.nav__item
+                        a.nav__link(href="#") Где купить
+            
+        .header__container.container
+            .header__body
+                .header__logo-w
+                    a.header__logo.logo(href="#") Центр прозрачной кровли
+                    .header__slogan Профилированный поликарбонат, прозрачный шифер, прозрачный профлист
+
+                .header__contacts
+                    a.header__phone.phone(href="tel:+88006000500") 8 800 6000-500
+                        .phone__text телефон в Екатеринбурге
+                    a.header__button.button(href="#callback") Перезвоните мне

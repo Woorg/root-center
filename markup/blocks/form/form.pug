@@ -1,0 +1,21 @@
+mixin form(data)
+    .form&attributes(attributes)
+        .form__row.form__row_2
+            .form__field
+                input.form__input(type="text", value="", placeholder="Имя" name='name')
+
+            .form__field.form__field_phone
+                input.form__input(type="text", value="", placeholder="+7 (___)___-__-__" name='phone')
+
+        .form__row.form__row_2
+            .form__field
+                input.form__input(type="text", value="", placeholder="E-mail" name='email')
+
+            .form__field
+                input.form__input(type="text", value="", placeholder="Комментарий" name='message')
+
+
+        input.form__submit.button(type="submit", value="Оставить заявку")
+
+
+

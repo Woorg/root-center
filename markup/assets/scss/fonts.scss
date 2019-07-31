@@ -1,61 +1,54 @@
 /* Your custom fonts here */
 
-/* Example
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: local('Alegreya Sans Light'), local('AlegreyaSans-Light'),
+        url('../fonts/hinted-subset-AlegreyaSans-Light.woff2') format('woff2'),
+        url('../fonts/hinted-subset-AlegreyaSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'CustomFont';
-    src: url('../fonts/Custom-Font.eot');
-    src: url('../fonts/Custom-Font.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/Custom-Font.woff') format('woff'),
-         url('../fonts/Custom-Font.svg#custom_font') format('svg');
-    font-weight: 400;       // For normal width. It could has another value   
-    font-style: normal;     // Also could has another value
-    }
-
-
-// Var for using custom font
-$CustomFont: 'CustomFont', Helvetica, Arial, sans-serif;
-*/
-
+    font-family: 'Alegreya Sans';
+    src: local('Alegreya Sans Medium'), local('AlegreyaSans-Medium'),
+        url('../fonts/hinted-subset-AlegreyaSans-Medium.woff2') format('woff2'),
+        url('../fonts/hinted-subset-AlegreyaSans-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
 
 @font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Regular'), local('OpenSans-Regular'),
-        url('../fonts/hinted-subset-OpenSans-Regular.woff2') format('woff2'),
-        url('../fonts/hinted-subset-OpenSans-Regular.woff') format('woff');
+    font-family: 'Alegreya Sans';
+    src: local('Alegreya Sans Bold'), local('AlegreyaSans-Bold'),
+        url('../fonts/hinted-subset-AlegreyaSans-Bold.woff2') format('woff2'),
+        url('../fonts/hinted-subset-AlegreyaSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alegreya Sans';
+    src: local('Alegreya Sans Regular'), local('AlegreyaSans-Regular'),
+        url('../fonts/hinted-subset-AlegreyaSans-Regular.woff2') format('woff2'),
+        url('../fonts/hinted-subset-AlegreyaSans-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'),
-        url('../fonts/hinted-subset-OpenSans-BoldItalic.woff2') format('woff2'),
-        url('../fonts/hinted-subset-OpenSans-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
+
 
 @font-face {
-    font-family: 'Open Sans';
-    src: local('Open Sans Bold'), local('OpenSans-Bold'),
-        url('../fonts/hinted-subset-OpenSans-Bold.woff2') format('woff2'),
-        url('../fonts/hinted-subset-OpenSans-Bold.woff') format('woff');
-    font-weight: bold;
+    font-family: 'Bebas Neue';
+    src: local('BebasNeueRegular'),
+        url('../fonts/hinted-subset-BebasNeueRegular.woff2') format('woff2'),
+        url('../fonts/hinted-subset-BebasNeueRegular.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'Barlow Condensed';
-    src: local('Barlow Condensed Bold Italic'), local('BarlowCondensed-BoldItalic'),
-        url('../fonts/hinted-subset-BarlowCondensed-BoldItalic.woff2') format('woff2'),
-        url('../fonts/hinted-subset-BarlowCondensed-BoldItalic.woff') format('woff');
-    font-weight: bold;
-    font-style: italic;
-}
-
-$b: 'Barlow Condensed',  Arial, "Helvetica Neue", Helvetica, sans-serif;
-$o: 'Open Sans',  Arial, "Helvetica Neue", Helvetica, sans-serif;
+$b: 'Bebas Neue',  Arial, "Helvetica Neue", Helvetica, sans-serif;
+$a: 'Alegreya Sans',  Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 
 
